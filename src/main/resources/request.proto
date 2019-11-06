@@ -1,0 +1,12 @@
+syntax = "proto3";
+import "rdbObject.proto";
+
+package test;
+option java_package = "test.clyde.protobuf";
+option java_outer_classname = "RequestProto";
+
+message Request {
+	string uuid = 1;
+	RdbObject rdb_object = 2;
+	string request = 3;
+}
